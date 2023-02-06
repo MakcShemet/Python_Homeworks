@@ -4,8 +4,7 @@
 
 N = int(input('Введите целое положительно число: '))
 k = 0
-i = 2
-while i**k < N:
-    print(i**k, end = ' ')
+while 2**k < N:
+    print(2**k, end = ' ')
     k += 1
 print('')
