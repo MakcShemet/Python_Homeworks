@@ -1,14 +1,14 @@
 import os
 from data_create import name_data, surname_data, phone_data, adress_data
 
-filename = 'data.txt'
+filename = 'DZ_8\data.txt'
 def print_data():    
     if os.path.exists(filename):
-        print('Вывод данных из файла: ')
+        print('\nВывод данных из файла: ')
         with open(filename, 'r', encoding = 'utf-8') as file:
             list_data = file.readlines()
             for el in list_data:
-                print(el)
+                print(el, end="")
     else:
         print('Файла не существует')
 
